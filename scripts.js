@@ -31,10 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
             "Staying hydrated is crucial for overall health.",
             "Regular physical activity can help prevent chronic diseases."
         ];
-        const dayOfYear = new Date().getDay();
-        return funFacts[dayOfYear % funFacts.length];
+        const dayOfWeek = new Date().getDay();
+        return funFacts[dayOfWeek % funFacts.length];
     }
 
+    // Set the initial fun fact
     document.getElementById('fun-fact').textContent = getFunFact();
 
     // BMI Calculator functionality
@@ -65,4 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simulate sending message
         document.getElementById('contact-output').textContent = 'Thank you for your message!';
     });
+
+    // Optionally, you can show the default section if needed
+    // showSection('videos');  // or any other section
 });
