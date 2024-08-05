@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutritionist's Website</title>
+    <title> Health 2.O</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="navbar">
         <img src="logo.jpg" alt="Logo" class="logo">
         <nav>
-            <a href="#videos" class="nav-link">Videos</a>
-            <a href="#fun-facts" class="nav-link">Fun Facts</a>
-            <a href="#bmi-calculator" class="nav-link">BMI Calculator</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#" class="nav-link" data-target="videos">Videos</a>
+            <a href="#" class="nav-link" data-target="fun-facts">Fun Facts</a>
+            <a href="#" class="nav-link" data-target="bmi-calculator">BMI Calculator</a>
+            <a href="#" class="nav-link" data-target="contact">Contact</a>
         </nav>
     </header>
     
     <main id="content">
-        <section id="videos">
+        <section id="videos" class="hidden">
             <h2>Nutritionist's Videos</h2>
             <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
         </section>
         
-        <section id="fun-facts">
+        <section id="fun-facts" class="hidden">
             <h2>Daily Fun Fact</h2>
             <p id="fun-fact"></p>
         </section>
         
-        <section id="bmi-calculator">
+        <section id="bmi-calculator" class="hidden">
             <h2>BMI Calculator</h2>
             <label for="height-input">Height (cm)</label>
             <input type="number" id="height-input" min="0">
@@ -38,7 +38,7 @@
             <p id="bmi-output"></p>
         </section>
         
-        <section id="contact">
+        <section id="contact" class="hidden">
             <h2>Contact</h2>
             <label for="name-input">Name</label>
             <input type="text" id="name-input">
