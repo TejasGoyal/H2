@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritionist's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="#videos" class="nav-link">Videos</a>
+            <a href="#fun-facts" class="nav-link">Fun Facts</a>
+            <a href="#bmi-calculator" class="nav-link">BMI Calculator</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    
+    <main id="content">
+        <section id="videos">
+            <h2>Nutritionist's Videos</h2>
+            <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+        </section>
+        
+        <section id="fun-facts">
+            <h2>Daily Fun Fact</h2>
+            <p id="fun-fact"></p>
+        </section>
+        
+        <section id="bmi-calculator">
+            <h2>BMI Calculator</h2>
+            <label for="height-input">Height (cm)</label>
+            <input type="number" id="height-input" min="0">
+            <label for="weight-input">Weight (kg)</label>
+            <input type="number" id="weight-input" min="0">
+            <button id="calculate-bmi">Calculate BMI</button>
+            <p id="bmi-output"></p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <label for="name-input">Name</label>
+            <input type="text" id="name-input">
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input">
+            <label for="message-input">Message</label>
+            <textarea id="message-input"></textarea>
+            <button id="send-button">Send</button>
+            <p id="contact-output"></p>
+        </section>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
